@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <h2>Course Registration Form</h2>
+    <form>
+        <p>
+            <label for="fullname">
+                <b>Full Name: </b>
+            </label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+        </p>
+
+        <p>
+        <label for="phone">
+            <b>Phone Number:</b>
+        </label>
+        <br>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               placeholder="Enter your phone number">
+    </p>
+
+    <p>
+        <label for="course">
+            <b>Select Course:</b>
+        </label>
+        <br>
+        <select id="course" name="course">
+            <option value="">-- Select a Course --</option>
+            <option value="fullstack">Full Stack Development</option>
+            <option value="datascience">Data Science</option>
+            <option value="uiux">UI/UX Design</option>
+            <option value="cloud">Cloud Computing</option>
+        </select>
+    </p>
+
+    <p>
+        <b>Learning Mode:</b>
+        <br>
+        <input type="radio"
+               id="online"
+               name="mode"
+               value="online">
+        <label for="online">Online</label>
+
+        <input type="radio"
+               id="offline"
+               name="mode"
+               value="offline">
+        <label for="offline">Offline</label>
+    </p>
+
+    <p>
+        <label for="startdate">
+            <b>Preferred Start Date:</b>
+        </label>
+        <br>
+        <input type="date"
+               id="startdate"
+               name="startdate">
+    </p>
+
+    <p>
+        <label for="comments">
+            <b>Additional Comments:</b>
+        </label>
+        <br>
+        <textarea id="comments"
+                  name="comments"
+                  rows="5"
+                  cols="40"
+                  placeholder="Enter your comments here..."></textarea>
+    </p>
+
+    <p>
+        <input type="submit"
+               value="Register Now">
+
+        <input type="reset"
+               value="Clear Form">
+    </p>
+    </form>
+</html>
